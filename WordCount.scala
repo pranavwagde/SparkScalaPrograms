@@ -11,6 +11,7 @@ object WordCount {
   def main(args: Array[String]) {
     //Initialization of SparkContext
     val sc = new SparkContext("local[*]", "WordCount")
+    
     //Setting Log level to ERROR, to avoid extra messages in output
     sc.setLogLevel("ERROR")
     
